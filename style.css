@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bege: #eee2dfff;
+    --bege-amarelado: #eed7c5ff;
+    --marrom-fraco: #c89f9cff;
+    --maroom: #c97c5dff;
+    --terra-vermelha: #b36a5eff;
+}
