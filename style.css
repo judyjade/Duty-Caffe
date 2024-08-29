@@ -41,3 +41,12 @@ body {
     font-family: var(--fonte-texto);
     margin-right: 20px;
 }
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.principal-capa__img {
+    width: 30%;
+}
