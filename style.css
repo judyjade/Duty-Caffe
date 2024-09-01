@@ -49,4 +49,52 @@ body {
 
 .principal-capa__img {
     width: 30%;
+    border-radius: 0 10%;
+}
+
+.principal-capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background: url(imagem/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 12px;
+    padding: 24px 12px;
+}
+
+.principal-capa__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.principal-capa__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+    color: var(--bege-amarelado);
+    margin-bottom: 12px;
+}
+
+.principal-capa__texto {
+    font-size: 24px;
+    margin-top: 24px;
+    color: var(--bege);
+}
+
+.principal-capa__combotao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.principal-capa__botao {
+    background-color: var(--marrom);
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 2em;
+    color: var(--bege);
+    text-decoration: none;
 }
