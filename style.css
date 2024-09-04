@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 12px;
+    padding: 24px;
 }
 
 .cabecalho-img {
@@ -40,11 +40,12 @@ body {
     font-size: 24px;
     font-family: var(--fonte-texto);
     margin-right: 20px;
+    transition: 0.5s all;
 }
 
-.principal {
-    display: flex;
-    justify-content: space-between;
+.cabecalho-nav__link:hover {
+    font-size: 28px;
+    color: var(--terra-vermelha);
 }
 
 .principal-capa__img {
@@ -91,10 +92,55 @@ body {
 }
 
 .principal-capa__botao {
-    background-color: var(--marrom);
+    background-color: var(--bege-amarelado);
     border-radius: 5px;
     padding: 1em;
     margin-top: 2em;
-    color: var(--bege);
+    color: var(--marrom);
     text-decoration: none;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 5px solid var(--bege-amarelado);
+    transition: 0.5s all;
+}
+
+.botao_secundario:hover {
+    background-color: var(--bege-amarelado);
+}
+
+.propaganda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 7em;
+}
+
+.propaganda_img {
+    width: 80%;
+    border-radius: 10% 2%;
+}
+
+.propaganda_titulo {
+    color: var(--bege);
+    font-size: 30px;
+}
+
+.propaganda_titulo:hover {
+    text-shadow: 6px 6px 10px var(--bege-amarelado);
+    transition: 0.7s;
+}
+
+.propaganda_texto {
+    font-size: 30px;
+    color: var(--bege-amarelado);
+    margin-top: 1em;
+}
+
+.propaganda_texto2 {
+    font-size: 30px;
+    
 }
