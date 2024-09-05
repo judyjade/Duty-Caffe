@@ -122,6 +122,7 @@ body {
 .propaganda_img {
     width: 80%;
     border-radius: 10% 2%;
+    margin: 4em;
 }
 
 .propaganda_titulo {
@@ -137,10 +138,14 @@ body {
 .propaganda_texto {
     font-size: 30px;
     color: var(--bege-amarelado);
-    margin-top: 1em;
+    margin: 1em;
 }
 
 .propaganda_texto2 {
     font-size: 30px;
-    
+}
+
+.propaganda_2 {
+    display: flex;
+    flex-direction: column;
 }
