@@ -58,7 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    background: url(imagem/fundo.jpg);
+    background: url(img/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,16 +98,23 @@ body {
     margin-top: 2em;
     color: var(--marrom);
     text-decoration: none;
+    transition: 0.5s all;
+}
+
+.principal-capa__botao:hover {
+    font-size: 18px;
 }
 
 .botao_secundario {
     background-color: transparent;
     border: 5px solid var(--bege-amarelado);
     transition: 0.5s all;
+    color: var(--bege-amarelado);
 }
 
 .botao_secundario:hover {
     background-color: var(--bege-amarelado);
+    color: var(--marrom);
 }
 
 .propaganda {
@@ -148,4 +155,56 @@ body {
 .propaganda_2 {
     display: flex;
     flex-direction: column;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    color: var(--bege-amarelado);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 24px;
+    color: var(--bege);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--bege);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--bege-amarelado);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo {
+    width: 20%;
+    border-radius: 10px;
+    margin: 1em;
 }
