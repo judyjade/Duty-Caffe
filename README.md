@@ -1,4 +1,5 @@
-#Duty-Caffe
+# Duty-Caffe
+Uma cafeteria Elegante 
 ```
 Status: Projeto Finalizado
 ```
