@@ -1,5 +1,4 @@
 #Dutty-Caffe
-Um site de cafeteria
 ```
 Status: Projeto Finalizado
 ```
