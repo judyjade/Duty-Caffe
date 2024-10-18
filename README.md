@@ -1,4 +1,4 @@
-#Dutty-Caffe
+#Duty-Caffe
 ```
 Status: Projeto Finalizado
 ```
