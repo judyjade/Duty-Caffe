@@ -5,102 +5,355 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duty Caffe</title>
+    <link rel="website icon" href="img/logo-aba.png">
+    <title>Duty Caffe - Café Elegante em Foz do Iguaçu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- CABEÇALHO -->
     <header class="cabecalho">
-        <img src="img/Cafeteria Elegante Logo.png" alt="Logo da Cafeteria" class="cabecalho-img">
-        <nav class="cabecalho-nav">
-            <a href="#" class="cabecalho-nav__link">Home</a>
-            <a href="#" class="cabecalho-nav__link">Contato</a>
+        <div class="cabecalho-logo">
+            <h1 class="cabecalho-titulo">Duty Caffe</h1>
+            <p class="cabecalho-subtitulo">Artesanal com Propósito</p>
+        </div>
+
+        <!-- Botão Menu Mobile -->
+        <button class="botao-menu-mobile" id="botaoMenuMobile" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navegação -->
+        <nav class="cabecalho-navegacao" id="navegacao">
+            <a href="#inicio" class="cabecalho-link">Início</a>
+            <a href="#sabores" class="cabecalho-link">Sabores</a>
+            <a href="#cardapio" class="cabecalho-link">Cardápio</a>
+            <a href="#depoimentos" class="cabecalho-link">Depoimentos</a>
+            <a href="#localizacao" class="cabecalho-link">Localização</a>
+            <a href="#contato" class="cabecalho-link cabecalho-link-destaque">Contato</a>
         </nav>
     </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="principal">
-        <section class="principal-capa">
-            <div class="principal-capa__combotao">
-                <div class="principal-capa__conteudo">
-                    <h1 class="principal-capa__titulo">O café mais chique de Foz.</h1>
-                    <p class="principal-capa__texto">Nos conheça um pouco mais.</p>
-                    <p class="principal-capa__texto">Estamos atendendo desde 2007.</p>
-                    <p class="principal-capa__texto">Servimos uma grande variedade de café, cappuccino, entre vários outros sabores.</p>
-                    <p class="principal-capa__texto">Um ambiente aconchegante e acolhedor para você e toda sua família!</p>
+        <!-- SEÇÃO HERO -->
+        <section class="secao-hero" id="inicio">
+            <div class="hero-conteudo">
+                <p class="hero-subtitulo">Sabor, Relaxamento, Recarga.</p>
+                <h1 class="hero-titulo">Café Excepcional, Sempre.</h1>
+                <p class="hero-descricao">Elaborado com paixão. Servido com propósito. Bem-vindo à Duty Caffe.</p>
+                <div class="hero-botoes">
+                    <a href="#cardapio" class="botao botao-primario">Descubra Nosso Cardápio</a>
+                    <a href="#localizacao" class="botao botao-secundario">Nos Visite</a>
                 </div>
-                <a href="#" class="principal-capa__botao">Veja nosso Cardápio</a>
-                <a href="#" class="principal-capa__botao botao_secundario">Entre em Contato</a>
             </div>
-                <img src="img/Cafeteria Elegante Logo.png" alt="Logo" class="principal-capa__img">
-        </section>
-        <section class="propaganda">
-            <img src="img/cafeteria.jpg" alt="A imagem de uma xícara de café" class="propaganda_img">
-            <div class="propaganda_conteudo">
-                <h2 class="propaganda_titulo">Será que você já experimentou nossos sabores?</h2>
-                <p class="propaganda_texto">A nossa cafeteria é conhecida pelo cappuccino estrangeiro, cappuccino de canela e pelo Latte Matteato.</p>
+            <div class="hero-imagem">
+                <img src="img/cafe-hero.jpg" alt="Xícara de café com latte art" class="imagem-hero">
             </div>
         </section>
-        <section class="propaganda">
-            <div class="propaganda_2">
-                <div class="propaganda_conteudo">
-                    <h2 class="propaganda_titulo">Um ambiente agradável!</h2>
-                    <p class="propaganda_texto">Nós oferecemos um ambiente para trabalho, lazer e para estudos, venha nos conhecer!</p>
+
+        <!-- SEÇÃO NOSSOS SABORES -->
+        <section class="secao-sabores" id="sabores">
+            <div class="secao-cabecalho">
+                <h2 class="secao-titulo">Nossos Sabores</h2>
+                <p class="secao-descricao">Descubra um mundo de sabores, elaborados com os melhores ingredientes.</p>
+            </div>
+            <div class="sabores-container">
+                <div class="sabor-card">
+                    <img src="img/cafe-classico.jpg" alt="Café Clássico" class="sabor-imagem">
+                    <h3 class="sabor-nome">Clássico</h3>
+                    <p class="sabor-descricao">Encorpado, rico e atemporal. Um sabor que nunca sai de moda.</p>
                 </div>
-                <a href="#" class="principal-capa__botao">Confira onde estamos!</a>
+                <div class="sabor-card">
+                    <img src="img/cafe-caramelo.jpg" alt="Café Caramelo" class="sabor-imagem">
+                    <h3 class="sabor-nome">Caramelo</h3>
+                    <p class="sabor-descricao">Suave, doce e perfeitamente equilibrado. Uma indulgência refinada.</p>
+                </div>
+                <div class="sabor-card">
+                    <img src="img/cafe-moca.jpg" alt="Café Moca" class="sabor-imagem">
+                    <h3 class="sabor-nome">Mocha</h3>
+                    <p class="sabor-descricao">Notas profundas de chocolate misturadas com nosso melhor espresso.</p>
+                </div>
+                <div class="sabor-card">
+                    <img src="img/cafe-baunilha.jpg" alt="Café Baunilha" class="sabor-imagem">
+                    <h3 class="sabor-nome">Baunilha</h3>
+                    <p class="sabor-descricao">Delicado e cremoso, com um toque de baunilha natural.</p>
+                </div>
+                <div class="sabor-card">
+                    <img src="img/cafe-avela.jpg" alt="Café Avelã" class="sabor-imagem">
+                    <h3 class="sabor-nome">Avelã</h3>
+                    <p class="sabor-descricao">Acarajado, quente e confortavelmente delicioso.</p>
+                </div>
             </div>
-            <img src="img/cafeteria2.jpg" alt="Imagem de um cappuccino em cima de uma mesa de madeira" class="propaganda_img">
-        </section>
-        <section class="propaganda">
-            <img src="img/cafe-caneta.jpg" alt="A imagem de uma xícara de café" class="propaganda_img">
-            <div class="propaganda_conteudo">
-                <h2 class="propaganda_titulo">Cappuccinos e Quitutes!</h2>
-                <p class="propaganda_texto">Biscoitos, salgados e tudo que tem direito como acompanhamento.</p>
+            <div class="secao-botao">
+                <a href="#cardapio" class="botao botao-primario">Explorar Todos os Sabores</a>
             </div>
         </section>
-        <section class="dispositivos">
-            <h2 class="dispositivos__titulo">Disponível nos seus dispositivos favoritos:</h2>
-            <ul class="dispositivos__lista">
-                <li>
-                    <img src="img/tv.svg" alt="ícone de Televisão">
-                    <h3 class="lista__item">TV</h3>
-                </li>
-                <li>
-                    <img src="img/computador.svg" alt="ícone de Computador">
-                    <h3 class="lista__item">Computador</h3>
-                </li>
-                <li>
-                    <img src="img/celular.svg" alt="ícone de Celular">
-                    <h3 class="lista__item">Celulares ou Tablet</h3>
-                </li>
-            </ul>
+
+        <!-- SEÇÃO DESTAQUES DO CARDÁPIO COM CARROSSEL -->
+        <section class="secao-cardapio" id="cardapio">
+            <div class="secao-cabecalho">
+                <p class="secao-etiqueta">Novo</p>
+                <h2 class="secao-titulo">Destaques do Cardápio</h2>
+                <p class="secao-descricao">Favoritos artesanais, feitos para agradar.</p>
+            </div>
+
+            <div class="carrossel-container">
+                <button class="botao-carrossel botao-carrossel-esquerda" aria-label="Anterior">
+                    <span>&#8249;</span>
+                </button>
+
+                <div class="carrossel-wrapper">
+                    <div class="carrossel-conteudo">
+                        <div class="item-cardapio">
+                            <img src="img/latte-assinatura.jpg" alt="Latte Assinatura" class="item-imagem">
+                            <h3 class="item-nome">Latte Assinatura</h3>
+                            <p class="item-descricao">Suave, encorpado e com leite vaporizado perfeito.</p>
+                            <p class="item-preco">R$ 18,00</p>
+                        </div>
+                        <div class="item-cardapio">
+                            <img src="img/macchiato-caramelo.jpg" alt="Macchiato Caramelo" class="item-imagem">
+                            <h3 class="item-nome">Macchiato Caramelo</h3>
+                            <p class="item-descricao">Espresso encorpado com caramelo e leite cremoso.</p>
+                            <p class="item-preco">R$ 20,00</p>
+                        </div>
+                        <div class="item-cardapio">
+                            <img src="img/moca-gelada.jpg" alt="Mocha Gelada" class="item-imagem">
+                            <h3 class="item-nome">Mocha Gelada</h3>
+                            <p class="item-descricao">Chocolate, espresso e gelo. Perfeito para dias quentes.</p>
+                            <p class="item-preco">R$ 22,00</p>
+                        </div>
+                        <div class="item-cardapio">
+                            <img src="img/croissant-pistache.jpg" alt="Croissant de Pistache" class="item-imagem">
+                            <h3 class="item-nome">Croissant de Pistache</h3>
+                            <p class="item-descricao">Manteiga crocante com creme de pistache cremoso.</p>
+                            <p class="item-preco">R$ 16,00</p>
+                        </div>
+                        <div class="item-cardapio">
+                            <img src="img/bolo-chocolate.jpg" alt="Bolo de Chocolate" class="item-imagem">
+                            <h3 class="item-nome">Bolo de Chocolate</h3>
+                            <p class="item-descricao">Fofinho, úmido e com um centro macio irresistível.</p>
+                            <p class="item-preco">R$ 18,00</p>
+                        </div>
+                        <div class="item-cardapio">
+                            <img src="img/croissant-amendoa.jpg" alt="Croissant de Amêndoa" class="item-imagem">
+                            <h3 class="item-nome">Croissant de Amêndoa</h3>
+                            <p class="item-descricao">Folhado delicado com creme de amêndoa suave.</p>
+                            <p class="item-preco">R$ 16,00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="botao-carrossel botao-carrossel-direita" aria-label="Próximo">
+                    <span>&#8250;</span>
+                </button>
+            </div>
+
+            <div class="secao-botao">
+                <a href="#" class="botao botao-primario">Ver Cardápio Completo</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DEPOIMENTOS COM CARROSSEL -->
+        <section class="secao-depoimentos" id="depoimentos">
+            <div class="secao-cabecalho">
+                <p class="secao-etiqueta">Novo</p>
+                <h2 class="secao-titulo">Depoimentos de Clientes</h2>
+                <p class="secao-descricao">Amado por nossos convidados, todos os dias.</p>
+            </div>
+
+            <div class="carrossel-container">
+                <button class="botao-carrossel botao-carrossel-esquerda" aria-label="Anterior">
+                    <span>&#8249;</span>
+                </button>
+
+                <div class="carrossel-wrapper">
+                    <div class="carrossel-conteudo carrossel-depoimentos">
+                        <div class="depoimento-card">
+                            <div class="depoimento-estrelas">
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                            </div>
+                            <p class="depoimento-texto">O melhor café de Foz do Iguaçu! Sabores incríveis e uma atmosfera tão aconchegante. Voltarei com certeza!</p>
+                            <div class="depoimento-autor">
+                                <img src="img/avatar-mariana.jpg" alt="Mariana F." class="depoimento-avatar">
+                                <div>
+                                    <p class="depoimento-nome">Mariana F.</p>
+                                    <p class="depoimento-cargo">Guia Local</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depoimento-card">
+                            <div class="depoimento-estrelas">
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                            </div>
+                            <p class="depoimento-texto">Cada detalhe é perfeito, desde o café até o atendimento. Meu novo lugar favorito! Recomendo muito.</p>
+                            <div class="depoimento-autor">
+                                <img src="img/avatar-lucas.jpg" alt="Lucas R." class="depoimento-avatar">
+                                <div>
+                                    <p class="depoimento-nome">Lucas R.</p>
+                                    <p class="depoimento-cargo">Viajante</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depoimento-card">
+                            <div class="depoimento-estrelas">
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                            </div>
+                            <p class="depoimento-texto">Bolos e pastéis incríveis com um café excepcional. Duty Caffe é simplesmente extraordinária!</p>
+                            <div class="depoimento-autor">
+                                <img src="img/avatar-ana.jpg" alt="Ana P." class="depoimento-avatar">
+                                <div>
+                                    <p class="depoimento-nome">Ana P.</p>
+                                    <p class="depoimento-cargo">Cliente Habitual</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="depoimento-card">
+                            <div class="depoimento-estrelas">
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                                <span class="estrela">★</span>
+                            </div>
+                            <p class="depoimento-texto">Ambiente perfeito para trabalhar ou relaxar. O café é de qualidade premium e o preço justo.</p>
+                            <div class="depoimento-autor">
+                                <img src="img/avatar-carlos.jpg" alt="Carlos M." class="depoimento-avatar">
+                                <div>
+                                    <p class="depoimento-nome">Carlos M.</p>
+                                    <p class="depoimento-cargo">Profissional Remoto</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="botao-carrossel botao-carrossel-direita" aria-label="Próximo">
+                    <span>&#8250;</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SEÇÃO LOCALIZAÇÃO E HORÁRIOS -->
+        <section class="secao-localizacao" id="localizacao">
+            <div class="secao-cabecalho">
+                <p class="secao-etiqueta">Novo</p>
+                <h2 class="secao-titulo">Nos Visite</h2>
+                <p class="secao-descricao">Adoraríamos recebê-lo.</p>
+            </div>
+
+            <div class="localizacao-container">
+                <div class="localizacao-info">
+                    <div class="info-bloco">
+                        <h3 class="info-titulo">Horários de Funcionamento</h3>
+                        <ul class="info-lista">
+                            <li><strong>Segunda a Sexta:</strong> 7:00 - 21:00</li>
+                            <li><strong>Sábado e Domingo:</strong> 8:00 - 22:00</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-bloco">
+                        <h3 class="info-titulo">Endereço</h3>
+                        <p class="info-texto">Avenida das Cataratas, 1234<br>Vila Yolanda<br>Foz do Iguaçu - PR, 85853-000<br>Brasil</p>
+                    </div>
+
+                    <div class="info-bloco">
+                        <h3 class="info-titulo">Telefone</h3>
+                        <p class="info-texto"><a href="tel:+554533334567" class="info-link">+55 (45) 3333-4567</a></p>
+                    </div>
+
+                    <div class="info-bloco">
+                        <h3 class="info-titulo">Email</h3>
+                        <p class="info-texto"><a href="mailto:contato@dutycaffe.com.br" class="info-link">contato@dutycaffe.com.br</a></p>
+                    </div>
+                </div>
+
+                <div class="localizacao-mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.523039682499!2d-54.5679289!3d-25.554259899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f691a71b3b5997%3A0x2485c8ed668573d8!2sAv.%20das%20Cataratas%2C%201234%20-%20Yolanda%2C%20Foz%20do%20Igua%C3%A7u%20-%20PR%2C%2085853-000!5e0!3m2!1spt-BR!2sbr!4v1780585231689!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="secao-botao">
+                <a href="https://www.google.com/maps/search/Avenida+das+Cataratas+1234+Foz+do+Iguaçu" target="_blank" class="botao botao-primario">Obter Direções</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CTA FINAL -->
+        <section class="secao-cta">
+            <h2 class="cta-titulo">Café Bom. Bom Humor.</h2>
+            <p class="cta-descricao">Junte-se a nós e torne cada momento saboroso.</p>
+            <a href="#contato" class="botao botao-primario">Peça Agora</a>
         </section>
     </main>
+
+    <!-- RODAPÉ -->
     <footer class="rodape">
-        <img src="img/Cafeteria Elegante Logo.png" alt="Logo da Cafeteria" class="rodape__logo">
-        <ul class="rodape__lista">
-            <li class="lista__link">
-                <a href="#">Localização</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Seja CafeLover</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Sabores Exóticos</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Sabores Clássicos</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Sabores Premiuns</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Sabores Gourmets</a>
-            </li>
-            <li class="lista__link">
-                <a href="#">Sabores Fit</a>
-            </li>
-        </ul>
-        <p class="rodape__texto"> &copy; Dutty Caffe - 2024</p>
+        <div class="rodape-conteudo">
+            <div class="rodape-coluna">
+                <h3 class="rodape-titulo">Duty Caffe</h3>
+                <p class="rodape-descricao">Elaborado com paixão. Servido com propósito.</p>
+                <div class="rodape-redes">
+                    <a href="#" class="rede-link" aria-label="Instagram">Instagram</a>
+                    <a href="#" class="rede-link" aria-label="Facebook">Facebook</a>
+                    <a href="#" class="rede-link" aria-label="WhatsApp">WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4 class="rodape-subtitulo">Links Rápidos</h4>
+                <ul class="rodape-lista">
+                    <li><a href="#inicio" class="rodape-link">Início</a></li>
+                    <li><a href="#sabores" class="rodape-link">Sabores</a></li>
+                    <li><a href="#cardapio" class="rodape-link">Cardápio</a></li>
+                    <li><a href="#localizacao" class="rodape-link">Localização</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4 class="rodape-subtitulo">Categorias</h4>
+                <ul class="rodape-lista">
+                    <li><a href="#" class="rodape-link">Sabores Clássicos</a></li>
+                    <li><a href="#" class="rodape-link">Sabores Exóticos</a></li>
+                    <li><a href="#" class="rodape-link">Sabores Premium</a></li>
+                    <li><a href="#" class="rodape-link">Sabores Fit</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape-coluna">
+                <h4 class="rodape-subtitulo">Newsletter</h4>
+                <p class="rodape-descricao-pequena">Inscreva-se para receber atualizações e ofertas especiais.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu email" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-botao">Inscrever</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            <p class="rodape-copyright">&copy; 2024 Duty Caffe. Todos os direitos reservados.</p>
+            <div class="rodape-links-legais">
+                <a href="#" class="rodape-link-legal">Política de Privacidade</a>
+                <a href="#" class="rodape-link-legal">Termos de Serviço</a>
+            </div>
+        </div>
     </footer>
+
+    <!-- SCRIPT DO CARROSSEL -->
+    <script src="script.js"></script>
 </body>
 
 </html>
